@@ -61,11 +61,35 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: green;
   color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: large;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.title-card {
+  width: 50%;
+}
+
+.card-body {
+  background-color: lightgray;
+  padding: max-content;
+  margin: 0;
+  border-right: 1px solid black;
+}
+
+.card-title {
+  border-right: 1px solid black;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+  margin: 0;
+  font-size: xx-large;
 }
