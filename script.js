@@ -45,55 +45,155 @@ text4pmEl.value = localStorage.getItem("4PM"); //Initializes given time form inp
 
 currentHr = moment().hour();
 
+// Sets background color for current time = 8AM
 if (currentHr === 8) {
   id8El.classList.add("present");
   id9El.classList.add("future");
   id10El.classList.add("future");
-  id11El.classList.add("future")
+  id11El.classList.add("future");
+  id12El.classList.add("future");
+  id1El.classList.add("future");
+  id2El.classList.add("future");
+  id3El.classList.add("future");
+  id4El.classList.add("future");
 }
 
+// Sets background color for current time = 9AM
 if (currentHr === 9) {
   id8El.classList.add("past");
   id9El.classList.add("present");
   id10El.classList.add("future");
-  id11El.classList.add("future")
+  id11El.classList.add("future");
+  id12El.classList.add("future");
+  id1El.classList.add("future");
+  id2El.classList.add("future");
+  id3El.classList.add("future");
+  id4El.classList.add("future");
 }
 
+// Sets background color for current time = 10AM
 if (currentHr === 10) {
   id8El.classList.add("past");
   id9El.classList.add("past");
   id10El.classList.add("present");
-  id11El.classList.add("future")
+  id11El.classList.add("future");
+  id12El.classList.add("future");
+  id1El.classList.add("future");
+  id2El.classList.add("future");
+  id3El.classList.add("future");
+  id4El.classList.add("future");
 }
 
+// Sets background color for current time = 11AM
+if (currentHr === 11) {
+  id8El.classList.add("past");
+  id9El.classList.add("past");
+  id10El.classList.add("past");
+  id11El.classList.add("present");
+  id12El.classList.add("future");
+  id1El.classList.add("future");
+  id2El.classList.add("future");
+  id3El.classList.add("future");
+  id4El.classList.add("future");
+}
+
+// Sets background color for current time = 12PM
+if (currentHr === 12) {
+  id8El.classList.add("past");
+  id9El.classList.add("past");
+  id10El.classList.add("past");
+  id11El.classList.add("past");
+  id12El.classList.add("present");
+  id1El.classList.add("future");
+  id2El.classList.add("future");
+  id3El.classList.add("future");
+  id4El.classList.add("future");
+}
+
+// Sets background color for current time = 1PM
+if (currentHr === 13) {
+  id8El.classList.add("past");
+  id9El.classList.add("past");
+  id10El.classList.add("past");
+  id11El.classList.add("past");
+  id12El.classList.add("past");
+  id1El.classList.add("present");
+  id2El.classList.add("future");
+  id3El.classList.add("future");
+  id4El.classList.add("future");
+}
+
+// Sets background color for current time = 2PM
+if (currentHr === 14) {
+  id8El.classList.add("past");
+  id9El.classList.add("past");
+  id10El.classList.add("past");
+  id11El.classList.add("past");
+  id12El.classList.add("past");
+  id1El.classList.add("past");
+  id2El.classList.add("present");
+  id3El.classList.add("future");
+  id4El.classList.add("future");
+}
+
+// Sets background color for current time = 3PM
+if (currentHr === 15) {
+  id8El.classList.add("past");
+  id9El.classList.add("past");
+  id10El.classList.add("past");
+  id11El.classList.add("past");
+  id12El.classList.add("past");
+  id1El.classList.add("past");
+  id2El.classList.add("past");
+  id3El.classList.add("present");
+  id4El.classList.add("future");
+}
+
+// Sets background color for current time = 4PM
+if (currentHr === 16) {
+  id8El.classList.add("past");
+  id9El.classList.add("past");
+  id10El.classList.add("past");
+  id11El.classList.add("past");
+  id12El.classList.add("past");
+  id1El.classList.add("past");
+  id2El.classList.add("past");
+  id3El.classList.add("past");
+  id4El.classList.add("present");
+}
+
+// 8AM save button for console logging & local storage saving
 saveBtn8El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
     console.log("8AM Btn Press")
     console.log("8AM text saved")
     localStorage.setItem("8AM",text8amEl.value)
     console.log(`8AM Reminder :  ${text8amEl.value} `)
     return;
-  });
+});
 
-  saveBtn9El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
-    console.log("9AM Btn Press")
-    console.log("9AM text saved")
-    localStorage.setItem("9AM",text9amEl.value)
-    console.log(`9AM Reminder :  ${text9amEl.value} `)
-    return;
-  });
+// 9AM save button for console logging & local storage saving
+saveBtn9El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("9AM Btn Press")
+  console.log("9AM text saved")
+  localStorage.setItem("9AM",text9amEl.value)
+  console.log(`9AM Reminder :  ${text9amEl.value} `)
+  return;
+});
 
-  saveBtn10El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
-    console.log("10AM Btn Press")
-    console.log("10AM text saved")
-    localStorage.setItem("10AM",text10amEl.value)
-    console.log(`10AM Reminder :  ${text10amEl.value} `)
-    return;
-  });
+// 10AM save button for console logging & local storage saving
+saveBtn10El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("10AM Btn Press")
+  console.log("10AM text saved")
+  localStorage.setItem("10AM",text10amEl.value)
+  console.log(`10AM Reminder :  ${text10amEl.value} `)
+  return;
+});
 
-  saveBtn11El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
-    console.log("11AM Btn Press")
-    console.log("11AM text saved")
-    localStorage.setItem("11AM",text11amEl.value)
-    console.log(`11AM Reminder :  ${text11amEl.value} `)
-    return;
-  });
+// 11AM save button for console logging & local storage saving
+saveBtn11El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("11AM Btn Press")
+  console.log("11AM text saved")
+  localStorage.setItem("11AM",text11amEl.value)
+  console.log(`11AM Reminder :  ${text11amEl.value} `)
+  return;
+});
