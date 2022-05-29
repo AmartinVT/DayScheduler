@@ -202,7 +202,7 @@ saveBtn11El.on('click', function() { //On press of save button, saves input to l
 saveBtn12El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
   console.log("12PM Btn Press")
   console.log("12PM text saved")
-  localStorage.setItem("12PM",text12amEl.value)
+  localStorage.setItem("12PM",text12pmEl.value)
   console.log(`12PM Reminder :  ${text12pmEl.value} `)
   return;
 });
