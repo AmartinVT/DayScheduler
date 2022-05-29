@@ -197,3 +197,48 @@ saveBtn11El.on('click', function() { //On press of save button, saves input to l
   console.log(`11AM Reminder :  ${text11amEl.value} `)
   return;
 });
+
+// 12PM save button for console logging & local storage saving
+saveBtn12El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("12PM Btn Press")
+  console.log("12PM text saved")
+  localStorage.setItem("12PM",text12amEl.value)
+  console.log(`12PM Reminder :  ${text12pmEl.value} `)
+  return;
+});
+
+// 1PM save button for console logging & local storage saving
+saveBtn1El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("1PM Btn Press")
+  console.log("1PM text saved")
+  localStorage.setItem("1PM",text1pmEl.value)
+  console.log(`1PM Reminder :  ${text1pmEl.value} `)
+  return;
+});
+
+// 2PM save button for console logging & local storage saving
+saveBtn2El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("2PM Btn Press")
+  console.log("2PM text saved")
+  localStorage.setItem("2PM",text2pmEl.value)
+  console.log(`2PM Reminder :  ${text2pmEl.value} `)
+  return;
+});
+
+// 3PM save button for console logging & local storage saving
+saveBtn3El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("3PM Btn Press")
+  console.log("3PM text saved")
+  localStorage.setItem("3PM",text3pmEl.value)
+  console.log(`3PM Reminder :  ${text3pmEl.value} `)
+  return;
+});
+
+// 4PM save button for console logging & local storage saving
+saveBtn4El.on('click', function() { //On press of save button, saves input to local storage for given time and reports success to console
+  console.log("4PM Btn Press")
+  console.log("4PM text saved")
+  localStorage.setItem("4PM",text4pmEl.value)
+  console.log(`4PM Reminder :  ${text4pmEl.value} `)
+  return;
+});
