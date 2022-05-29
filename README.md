@@ -34,3 +34,10 @@ The planner also formats the background colors of each time-slot row:
 
 SCREENSHOTS
 ---
+![Screenshot of Header](Assets/screenshots/SS1.png)
+
+![Screenshot of Current Time](Assets/screenshots/SS2.png)
+
+![Screenshot of Data Entry](Assets/screenshots/SS3.png)
+
+![Screenshot of Local Storage after Save](Assets/screenshots/SS4.png)
